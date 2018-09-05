@@ -14,6 +14,7 @@ class App extends Component{
         this.addTarea = this.addTarea.bind(this);
 
     }
+    
 
     addTarea(e){
         if (this.state._id){
@@ -74,7 +75,7 @@ class App extends Component{
         } 
 
     eliminarTarea(id){
-        if (confirm('¿Estas seguro de querer eliminar esta tarea?')) {
+        if (confirm('¿Estas seguro/a de querer eliminar esta tarea?')) {
             fetch('/api/tareas/' + id,{
                 method: 'DELETE',
                 headers: {
